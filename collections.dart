@@ -32,5 +32,11 @@ void main() {
 
   ages.forEach((key, value) {
     print('$key, $value');
+    
+    num newNumbers = 2 * int.parse('$value');
+    
+    
+    //value is a String, so we parsed (changed) to integer
+    print(newNumbers);
   });
 }
