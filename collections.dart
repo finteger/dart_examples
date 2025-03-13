@@ -35,6 +35,9 @@ void main() {
     
     num newNumbers = 2 * int.parse('$value');
     
+    String newNames = "Mr. " + "$key";
+    
+    print(newNames);
     
     //value is a String, so we parsed (changed) to integer
     print(newNumbers);
