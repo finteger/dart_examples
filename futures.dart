@@ -14,6 +14,19 @@ void main() {
 
 //Futures are variables or data that have yet to resolve.  
 //They involve file system, database, network, computational operations
+
 Future<String> getUserName() async {
+  
+  /*
+   * try-catch statements are needed in async operations as the potential for errors is a lot higher in these operations
+  */
+  
+  try{
+    
   return Future.delayed(Duration(seconds: 2), () => 'Mark');
+ 
+  } catch(err) {
+    throw Exception('Something went wrong!');
+  }
+  
 }
