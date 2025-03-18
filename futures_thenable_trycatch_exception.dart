@@ -5,9 +5,9 @@
  * see it's value;
  */
 
-void main() {
+void main() async {
   print('Start');
-  getUserName().then((value) => print(value));
+  await getUserName().then((value) => print(value));
   print('End');
 }
 
