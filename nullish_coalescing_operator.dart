@@ -6,11 +6,12 @@ The ?? operator checks if name is null. If it is, it assigns 'Guest' as the valu
 
 void main() {
   String? name;
+  
 
   // Using the null coalescing operator
   String displayName = name ?? 'Guest';
+  
+  displayName = 'Not null';
 
   print(displayName); // Output: Guest
 }
-
-
